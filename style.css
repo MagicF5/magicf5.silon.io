@@ -7,7 +7,6 @@
 }
 
 
-
 /*Info block*/
 
 .container {
@@ -20,6 +19,7 @@
 
 .header {
     background-color: #fef7f6;
+    padding: 0 15px;
 }
 
 .row {
@@ -157,11 +157,10 @@
 }
 
 /*Header NAV*/
-
 .header-nav {
     display: flex;
     justify-content: space-between;
-    padding: 27px 0;
+    padding: 27px 20px;
 }
 
 /***************Logo*/
@@ -257,7 +256,7 @@ a svg #icons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0;
+    padding: 100px 15px;
 }
 
 .banner-photo {
@@ -1038,3 +1037,49 @@ h3 a {
     font-weight: 400;
     text-decoration: none;
 }
+
+@media(max-width: 768px) {
+    .title {
+        font-size: 27px;
+    }
+
+    .ult-colection {
+        padding-bottom: 20px;
+    }
+
+    .shop-button {
+        margin-top: 45px;
+    }
+
+    .row-banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-photo {
+        width: 100%;
+        height: 550px;
+    }
+
+    .banner-info {
+        padding: 50px 15px;
+    }
+}
+
+@media(max-width: 640px) {
+    .site-navigation,
+    .header {
+        display: none;
+    }
+
+    .header-nav {
+        padding: 15px 20px;
+    }
+}
+
+@media(max-width: 576px) {
+    .banner-photo {
+        width: 100%;
+        height: 280px;
+    }
+}
+

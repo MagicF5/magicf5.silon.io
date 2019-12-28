@@ -3,21 +3,28 @@
     padding: 0;
     font-size: 0;
     border: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*Info block*/
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*HEADER*/
 
-/*Info block*/
-
-body {
-    display: block;
+.header {
+    background-color: #fef7f6;
 }
 
-.header {
+.row {
     display: flex;
     justify-content: space-between;
-    background-color: #fef7f6;
-    padding: 0 100px 0 100px;
 }
 
 .contact-data {
@@ -154,8 +161,7 @@ body {
 .header-nav {
     display: flex;
     justify-content: space-between;
-    background-color:white;
-    padding: 27px 100px;
+    padding: 27px 0;
 }
 
 /***************Logo*/
@@ -238,14 +244,15 @@ a svg #icons {
 /*Banner*/
 
 .banner {
-    display: flex;
-    justify-content: space-between;
+
     background-image: url("Slice_1.png");
     background-position: center top;
     background-size: cover;
-    padding: 0 100px;
 }
-
+.row-banner {
+    display: flex;
+    justify-content: space-between;
+}
 .banner-info {
     display: flex;
     flex-direction: column;
@@ -298,12 +305,14 @@ a svg #icons {
     color: rgb(83, 83, 216);
 }
 
+
 /*Product*/
+
 
 .product {
     display: flex;
     flex-direction: column;
-    padding: 50px 100px;
+    padding: 100px 0;
 }
 
 .product-title {
@@ -314,7 +323,7 @@ a svg #icons {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    padding-bottom: 90px;
+    padding-bottom: 50px;
 }
 
 .samples-of-product {
@@ -427,11 +436,14 @@ a svg #icons {
 
 /*SALE Banner*/
 .sale-banner {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 100px;
+
     background-color: #f6f6f6;
     background-image: linear-gradient(to right, #e9e1d8 0%, #f7f2eb 48%, #e4dacf 99%, #e4dacf 100%);
+}
+
+.sale-banner-row {
+    display: flex;
+    justify-content: space-between;
 }
 
 .sale-info {
@@ -494,7 +506,7 @@ a svg #icons {
 .most-popular {
     display: flex;
     flex-direction: column;
-    padding: 50px 100px;
+    padding: 50px 0;
 }
 
 .title {
@@ -566,7 +578,7 @@ a svg #icons {
 .security-support {
     display: flex;
     justify-content: space-between;
-    padding: 50px 100px;
+    padding: 50px 0;
 }
 
 .sec-box {
@@ -621,7 +633,7 @@ a svg #icons {
 .trending-products {
     display: flex;
     flex-direction: column;
-    padding: 50px 100px;
+    padding: 50px 0;
 }
 .tp-samples {
     padding-top: 50px;
@@ -728,7 +740,7 @@ a svg #icons {
 .silon-journal {
     display: flex;
     flex-direction: column;
-    padding: 25px 100px 25px 100px; 
+    padding: 100px 0; 
 }
 
 .sj-box {
@@ -819,7 +831,7 @@ a svg #icons {
 .follow-us {
     display: flex;
     flex-direction: column;
-    padding: 0 100px 50px 100px;
+    padding-bottom: 100px;
 }
 
 .follow {
@@ -846,16 +858,13 @@ a svg #icons {
 
 
 footer {
-    padding: 100px 100px 25px 100px;
-    display: flex;
-    flex-direction: column;
     background-color: #000000;
     background-image: linear-gradient(to right, #e9e1d8 0%, #f7f2eb 48%, #e4dacf 99%, #e4dacf 100%);
 }
 
 
 .footer-container {
-    padding-bottom: 50px;
+    padding: 100px 0;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(202, 195, 195);
@@ -1012,18 +1021,17 @@ margin-bottom: 20px;
 }
 
 h3 {
-margin-top: 44px;
-display: flex;
-align-self: center;
-color: #888888;
-font-family: Roboto;
-font-size: 14px;
-font-weight: 400;
+    margin-top: 44px;
+    display: flex;
+   justify-content: center;
+    color: #888888;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 20px;
 }
 
 h3 a {
-    display: flex;
-    align-self: center;
     color: #ff5353;
     font-family: Roboto;
     font-size: 14px;

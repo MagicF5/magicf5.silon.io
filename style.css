@@ -214,6 +214,10 @@
     position: relative;
 }
 
+.burger {
+    display: none;
+}
+
 svg {
     width: 15px;
     height: 15px;
@@ -1067,7 +1071,9 @@ h3 a {
 
 }
 
-@media(max-width: 768px) {
+@media(max-width: 768px) {}
+
+
     .title, .product-title {
         font-size: 27px;
     }
@@ -1154,10 +1160,12 @@ h3 a {
 
 
 @media(max-width: 640px) {
-    .site-navigation,
-    .header {
+    .header,
+    .site-navigation {
         display: none;
     }
+
+    
 
     .header-nav {
         padding: 15px 20px;
